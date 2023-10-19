@@ -11,8 +11,16 @@
 		D104E7D12AE142AD003CED7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104E7D02AE142AD003CED7E /* ContentView.swift */; };
 		D104E7D32AE142AE003CED7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D104E7D22AE142AE003CED7E /* Assets.xcassets */; };
 		D104E7D72AE142AE003CED7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D104E7D62AE142AE003CED7E /* Preview Assets.xcassets */; };
-		D14291A82AE146B7007AB809 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D14291A72AE146B7007AB809 /* RxCocoa */; };
-		D14291AF2AE14710007AB809 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D14291AE2AE14710007AB809 /* RxSwift */; };
+		D13158E82AE46E58005D065B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13158E72AE46E58005D065B /* AppError.swift */; };
+		D13158EA2AE46E7D005D065B /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13158E92AE46E7D005D065B /* AuthResponse.swift */; };
+		D13158EF2AE48D59005D065B /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D13158ED2AE48834005D065B /* Secrets.xcconfig */; };
+		D14291B32AE149DE007AB809 /* PetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14291B22AE149DE007AB809 /* PetAPI.swift */; };
+		D16B12EA2AE1739100F7E62D /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B12E92AE1739100F7E62D /* AuthManager.swift */; };
+		D16B12EC2AE173AC00F7E62D /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B12EB2AE173AC00F7E62D /* KeychainManager.swift */; };
+		D16B12F02AE1832000F7E62D /* AnimalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B12EF2AE1832000F7E62D /* AnimalResponse.swift */; };
+		D178464C2AE29BD3005E7C0D /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = D178464B2AE29BD3005E7C0D /* RxTest */; };
+		D19E7FFE2AE189BC00883FF2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D19E7FFD2AE189BC00883FF2 /* RxCocoa */; };
+		D19E80042AE18B4600883FF2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D19E80032AE18B4600883FF2 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +30,31 @@
 		D104E7D22AE142AE003CED7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D104E7D42AE142AE003CED7E /* PetFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetFinder.entitlements; sourceTree = "<group>"; };
 		D104E7D62AE142AE003CED7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D13158E72AE46E58005D065B /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		D13158E92AE46E7D005D065B /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		D13158ED2AE48834005D065B /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		D13158EE2AE48C44005D065B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D14291B22AE149DE007AB809 /* PetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAPI.swift; sourceTree = "<group>"; };
+		D16B12E92AE1739100F7E62D /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		D16B12EB2AE173AC00F7E62D /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		D16B12EF2AE1832000F7E62D /* AnimalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D104E7C82AE142AD003CED7E /* Frameworks */ = {
+		D173E8C12AE272FF001803E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D14291AF2AE14710007AB809 /* RxSwift in Frameworks */,
-				D14291A82AE146B7007AB809 /* RxCocoa in Frameworks */,
+				D178464C2AE29BD3005E7C0D /* RxTest in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19E7FF42AE1899400883FF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19E80042AE18B4600883FF2 /* RxSwift in Frameworks */,
+				D19E7FFE2AE189BC00883FF2 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,8 +81,16 @@
 		D104E7CD2AE142AD003CED7E /* PetFinder */ = {
 			isa = PBXGroup;
 			children = (
+				D13158EE2AE48C44005D065B /* Info.plist */,
 				D104E7CE2AE142AD003CED7E /* PetFinderApp.swift */,
 				D104E7D02AE142AD003CED7E /* ContentView.swift */,
+				D14291B22AE149DE007AB809 /* PetAPI.swift */,
+				D13158E72AE46E58005D065B /* AppError.swift */,
+				D16B12EF2AE1832000F7E62D /* AnimalResponse.swift */,
+				D13158E92AE46E7D005D065B /* AuthResponse.swift */,
+				D16B12E92AE1739100F7E62D /* AuthManager.swift */,
+				D16B12EB2AE173AC00F7E62D /* KeychainManager.swift */,
+				D13158ED2AE48834005D065B /* Secrets.xcconfig */,
 				D104E7D22AE142AE003CED7E /* Assets.xcassets */,
 				D104E7D42AE142AE003CED7E /* PetFinder.entitlements */,
 				D104E7D52AE142AE003CED7E /* Preview Content */,
@@ -89,8 +121,8 @@
 			buildConfigurationList = D104E7DA2AE142AE003CED7E /* Build configuration list for PBXNativeTarget "PetFinder" */;
 			buildPhases = (
 				D104E7C72AE142AD003CED7E /* Sources */,
-				D104E7C82AE142AD003CED7E /* Frameworks */,
 				D104E7C92AE142AD003CED7E /* Resources */,
+				D19E7FF42AE1899400883FF2 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -98,8 +130,8 @@
 			);
 			name = PetFinder;
 			packageProductDependencies = (
-				D14291A72AE146B7007AB809 /* RxCocoa */,
-				D14291AE2AE14710007AB809 /* RxSwift */,
+				D19E7FFD2AE189BC00883FF2 /* RxCocoa */,
+				D19E80032AE18B4600883FF2 /* RxSwift */,
 			);
 			productName = PetFinder;
 			productReference = D104E7CB2AE142AD003CED7E /* PetFinder.app */;
@@ -146,8 +178,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13158EF2AE48D59005D065B /* Secrets.xcconfig in Resources */,
 				D104E7D72AE142AE003CED7E /* Preview Assets.xcassets in Resources */,
 				D104E7D32AE142AE003CED7E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D173E8C22AE272FF001803E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,11 +199,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D104E7D12AE142AD003CED7E /* ContentView.swift in Sources */,
+				D13158EA2AE46E7D005D065B /* AuthResponse.swift in Sources */,
+				D16B12EA2AE1739100F7E62D /* AuthManager.swift in Sources */,
+				D14291B32AE149DE007AB809 /* PetAPI.swift in Sources */,
 				D104E7CF2AE142AD003CED7E /* PetFinderApp.swift in Sources */,
+				D13158E82AE46E58005D065B /* AppError.swift in Sources */,
+				D16B12EC2AE173AC00F7E62D /* KeychainManager.swift in Sources */,
+				D16B12F02AE1832000F7E62D /* AnimalResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D173E8C92AE272FF001803E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D104E7CA2AE142AD003CED7E /* PetFinder */;
+			targetProxy = D173E8C82AE272FF001803E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D104E7D82AE142AE003CED7E /* Debug */ = {
@@ -218,9 +272,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_PREPROCESS = NO;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -273,15 +329,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_PREPROCESS = NO;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
 		D104E7DB2AE142AE003CED7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D13158ED2AE48834005D065B /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,6 +352,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PetFinder/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -301,9 +361,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -311,10 +371,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iustin.bulimar.PetFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -331,6 +392,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PetFinder/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -339,9 +401,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -349,10 +411,57 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iustin.bulimar.PetFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D173E8CA2AE272FF001803E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2X2D3BDQX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iustin.bulimar.PetFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PetFinder";
+			};
+			name = Debug;
+		};
+		D173E8CB2AE272FF001803E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2X2D3BDQX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iustin.bulimar.PetFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PetFinder";
 			};
 			name = Release;
 		};
@@ -391,14 +500,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D14291A72AE146B7007AB809 /* RxCocoa */ = {
+		D178464B2AE29BD3005E7C0D /* RxTest */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D14291A22AE146B7007AB809 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = D19E7FF82AE189BC00883FF2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		D19E7FFD2AE189BC00883FF2 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D19E7FF82AE189BC00883FF2 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		D14291AE2AE14710007AB809 /* RxSwift */ = {
+		D19E80032AE18B4600883FF2 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D14291A22AE146B7007AB809 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = D19E7FF82AE189BC00883FF2 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
