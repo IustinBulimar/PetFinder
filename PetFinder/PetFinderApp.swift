@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct PetFinderApp: App {
+    @StateObject var viewModel = PetsViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PetsView(viewModel: viewModel)
         }
     }
 }

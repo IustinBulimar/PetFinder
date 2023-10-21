@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D104E7CF2AE142AD003CED7E /* PetFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104E7CE2AE142AD003CED7E /* PetFinderApp.swift */; };
-		D104E7D12AE142AD003CED7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104E7D02AE142AD003CED7E /* ContentView.swift */; };
+		D104E7D12AE142AD003CED7E /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104E7D02AE142AD003CED7E /* PetsView.swift */; };
 		D104E7D32AE142AE003CED7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D104E7D22AE142AE003CED7E /* Assets.xcassets */; };
 		D104E7D72AE142AE003CED7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D104E7D62AE142AE003CED7E /* Preview Assets.xcassets */; };
 		D13158E82AE46E58005D065B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13158E72AE46E58005D065B /* AppError.swift */; };
@@ -18,6 +18,7 @@
 		D14291B32AE149DE007AB809 /* PetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14291B22AE149DE007AB809 /* PetAPI.swift */; };
 		D16B12EA2AE1739100F7E62D /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B12E92AE1739100F7E62D /* AuthManager.swift */; };
 		D16B12EC2AE173AC00F7E62D /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B12EB2AE173AC00F7E62D /* KeychainManager.swift */; };
+		D16B12EE2AE1831200F7E62D /* PetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B12ED2AE1831200F7E62D /* PetsViewModel.swift */; };
 		D16B12F02AE1832000F7E62D /* AnimalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B12EF2AE1832000F7E62D /* AnimalResponse.swift */; };
 		D173E8C72AE272FF001803E8 /* AuthManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173E8C62AE272FF001803E8 /* AuthManagerTests.swift */; };
 		D178464A2AE29B37005E7C0D /* PetsApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17846492AE29B37005E7C0D /* PetsApiTests.swift */; };
@@ -25,6 +26,9 @@
 		D17846522AE2BEDF005E7C0D /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178464F2AE2B72B005E7C0D /* URLProtocolStub.swift */; };
 		D17846542AE2C006005E7C0D /* MockAnimalResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D178464D2AE2B632005E7C0D /* MockAnimalResponse.json */; };
 		D17846572AE2C30D005E7C0D /* MockAuthResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D17846552AE2C2E6005E7C0D /* MockAuthResponse.json */; };
+		D182F59E2AE3F30600E84A81 /* PetDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D182F59D2AE3F30600E84A81 /* PetDetailsView.swift */; };
+		D182F5A02AE3F38500E84A81 /* PetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D182F59F2AE3F38500E84A81 /* PetRowView.swift */; };
+		D182F5A22AE3FA2A00E84A81 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D182F5A12AE3FA2A00E84A81 /* LocationManager.swift */; };
 		D19E7FFE2AE189BC00883FF2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D19E7FFD2AE189BC00883FF2 /* RxCocoa */; };
 		D19E80042AE18B4600883FF2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D19E80032AE18B4600883FF2 /* RxSwift */; };
 /* End PBXBuildFile section */
@@ -42,7 +46,7 @@
 /* Begin PBXFileReference section */
 		D104E7CB2AE142AD003CED7E /* PetFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D104E7CE2AE142AD003CED7E /* PetFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFinderApp.swift; sourceTree = "<group>"; };
-		D104E7D02AE142AD003CED7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D104E7D02AE142AD003CED7E /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
 		D104E7D22AE142AE003CED7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D104E7D42AE142AE003CED7E /* PetFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetFinder.entitlements; sourceTree = "<group>"; };
 		D104E7D62AE142AE003CED7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 		D14291B22AE149DE007AB809 /* PetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAPI.swift; sourceTree = "<group>"; };
 		D16B12E92AE1739100F7E62D /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		D16B12EB2AE173AC00F7E62D /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		D16B12ED2AE1831200F7E62D /* PetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewModel.swift; sourceTree = "<group>"; };
 		D16B12EF2AE1832000F7E62D /* AnimalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalResponse.swift; sourceTree = "<group>"; };
 		D173E8C42AE272FF001803E8 /* PetFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D173E8C62AE272FF001803E8 /* AuthManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManagerTests.swift; sourceTree = "<group>"; };
@@ -61,6 +66,9 @@
 		D178464D2AE2B632005E7C0D /* MockAnimalResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockAnimalResponse.json; sourceTree = "<group>"; };
 		D178464F2AE2B72B005E7C0D /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
 		D17846552AE2C2E6005E7C0D /* MockAuthResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockAuthResponse.json; sourceTree = "<group>"; };
+		D182F59D2AE3F30600E84A81 /* PetDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailsView.swift; sourceTree = "<group>"; };
+		D182F59F2AE3F38500E84A81 /* PetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRowView.swift; sourceTree = "<group>"; };
+		D182F5A12AE3FA2A00E84A81 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +116,15 @@
 			children = (
 				D13158EE2AE48C44005D065B /* Info.plist */,
 				D104E7CE2AE142AD003CED7E /* PetFinderApp.swift */,
-				D104E7D02AE142AD003CED7E /* ContentView.swift */,
+				D104E7D02AE142AD003CED7E /* PetsView.swift */,
+				D182F59F2AE3F38500E84A81 /* PetRowView.swift */,
+				D182F59D2AE3F30600E84A81 /* PetDetailsView.swift */,
+				D16B12ED2AE1831200F7E62D /* PetsViewModel.swift */,
 				D14291B22AE149DE007AB809 /* PetAPI.swift */,
 				D13158E72AE46E58005D065B /* AppError.swift */,
 				D16B12EF2AE1832000F7E62D /* AnimalResponse.swift */,
 				D13158E92AE46E7D005D065B /* AuthResponse.swift */,
+				D182F5A12AE3FA2A00E84A81 /* LocationManager.swift */,
 				D16B12E92AE1739100F7E62D /* AuthManager.swift */,
 				D16B12EB2AE173AC00F7E62D /* KeychainManager.swift */,
 				D1A52C0A2AE30A3700150B2B /* Mocking */,
@@ -272,14 +284,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D104E7D12AE142AD003CED7E /* ContentView.swift in Sources */,
 				D13158EA2AE46E7D005D065B /* AuthResponse.swift in Sources */,
 				D17846522AE2BEDF005E7C0D /* URLProtocolStub.swift in Sources */,
+				D104E7D12AE142AD003CED7E /* PetsView.swift in Sources */,
 				D16B12EA2AE1739100F7E62D /* AuthManager.swift in Sources */,
+				D182F5A22AE3FA2A00E84A81 /* LocationManager.swift in Sources */,
 				D14291B32AE149DE007AB809 /* PetAPI.swift in Sources */,
 				D104E7CF2AE142AD003CED7E /* PetFinderApp.swift in Sources */,
+				D182F5A02AE3F38500E84A81 /* PetRowView.swift in Sources */,
+				D16B12EE2AE1831200F7E62D /* PetsViewModel.swift in Sources */,
 				D13158E82AE46E58005D065B /* AppError.swift in Sources */,
 				D13158EC2AE483E8005D065B /* Animal+Mock.swift in Sources */,
+				D182F59E2AE3F30600E84A81 /* PetDetailsView.swift in Sources */,
 				D16B12EC2AE173AC00F7E62D /* KeychainManager.swift in Sources */,
 				D16B12F02AE1832000F7E62D /* AnimalResponse.swift in Sources */,
 			);
@@ -438,6 +454,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PetFinder/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need the location to see how far the animals are from you.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -478,6 +495,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PetFinder/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need the location to see how far the animals are from you.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
